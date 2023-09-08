@@ -21,7 +21,7 @@ public abstract class RepositoryBase<TEntity, TContext> : IRepositoryBase<TEntit
         return entity;
     }
 
-    public async Task<TEntity?> DeleteAsync(int id)
+    public async Task<TEntity?> DeleteAsync(Guid id)
     {
         var entity = await this._context.Set<TEntity>().FindAsync(id);
         if (entity == null)
@@ -35,7 +35,7 @@ public abstract class RepositoryBase<TEntity, TContext> : IRepositoryBase<TEntit
         return entity;
     }
 
-    public async Task<TEntity?> GetAsync(int id)
+    public async Task<TEntity?> GetAsync(Guid id)
     {
         return await this._context.Set<TEntity>().FindAsync(id);
     }

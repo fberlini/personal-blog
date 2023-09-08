@@ -2,7 +2,7 @@ using BlogAPI.Models;
 
 namespace BlogAPI.Repositories.Interfaces;
 
-interface IAuthorRepository: IRepositoryBase<Author>
+public interface IAuthorRepository: IRepositoryBase<Author>
 {
     
 }
