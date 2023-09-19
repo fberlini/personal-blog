@@ -1,8 +1,15 @@
 const Logo = () => {
   return (
-    <a href="localhost:3000" className="ml-5">
-      <img className="w-14" src="/logo192.png" alt="Logo" />
-    </a>
+    <div className="flex justify-start w-1/3 ml-5">
+      <a href="./" className="">
+        <img
+          src="/images/blog-icon.svg"
+          className="w-14 h-16"
+          title="Logo"
+          alt="Logo"
+        />
+      </a>
+    </div>
   );
 };
 

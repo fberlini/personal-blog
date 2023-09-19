@@ -1,6 +1,6 @@
 const Post = () => {
   return (
-    <div className="font-mono ml-96 mr-96 mt-40 flex-1">
+    <div className="font-mono">
       <h1 className="flex font-semibold text-5xl justify-center mb-20">Este é um post de testes para o blog</h1>
       <p className="mb-10 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod purus eget tellus porttitor vehicula. Maecenas eget dui dapibus, mattis nulla at, rhoncus orci. Maecenas nulla quam, accumsan sit amet consectetur ac, blandit vitae justo. Proin viverra tincidunt enim vel fringilla. Sed in hendrerit enim. Aenean malesuada turpis nec quam rutrum elementum. Curabitur interdum nisl vitae nisl finibus, eu ultricies ligula fermentum.</p>
       <p className="mb-10 text-xl">Ut malesuada metus eu justo tincidunt, at mattis nisi semper. Nam nec ultricies nulla, vitae mattis justo. Quisque vulputate volutpat diam non scelerisque. Donec sodales egestas ultricies. Donec auctor sed eros in laoreet. Nam risus tortor, fringilla nec ligula non, porta eleifend dui. Proin dictum, ante eu lobortis congue, dolor lacus elementum sem, dignissim ullamcorper ex justo vitae risus. Duis ante massa, euismod eu ex vitae, egestas fringilla lacus. Vivamus maximus tincidunt eros, et congue leo mattis eu. Nullam rhoncus dolor in massa fermentum porta. Fusce imperdiet lorem non est dignissim vehicula. Phasellus fringilla felis quis eros tincidunt, non aliquet felis sollicitudin. Praesent nec euismod lorem.</p>

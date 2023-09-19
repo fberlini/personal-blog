@@ -4,7 +4,7 @@ import Title from "./Title";
 
 const Header = () => {
   return (
-    <nav className="flex items-center pt-5">
+    <nav className="flex items-center justify-between z-10 relative pt-5">
       <Logo />
       <Title />
       <SearchBar />

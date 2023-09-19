@@ -1,10 +1,8 @@
 const Title = () => {
   return (
-    <div className="grow">
-      <span className="absolute flex justify-center left-0 right-0 font-mono text-2xl subpixel-antialiased font-medium">
-        Blog do Berlini
-      </span>
-    </div>
+    <span className="flex justify-center w-1/3">
+      <img src="/images/blog-title.svg" title="title" className="w-80" alt="Logo" />
+    </span>
   );
 };
 
