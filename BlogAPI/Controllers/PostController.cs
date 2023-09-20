@@ -10,17 +10,19 @@ public class PostController : ControllerBase
 {
     private readonly ILogger<PostController> _logger;
     private readonly IPostRepository _postRepository;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public PostController(ILogger<PostController> logger, IPostRepository postRepository)
+    public PostController(ILogger<PostController> logger, IPostRepository postRepository, IUnitOfWork unitOfWork)
     {
         _logger = logger;
         _postRepository = postRepository;
+        _unitOfWork = unitOfWork;
     }
 
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
-        var posts = await _postRepository.GetAllAsync();
+        var posts = await _postRepository.GetAllWithChildAsync();
 
         if(posts == null || posts.Count == 0)
         {
