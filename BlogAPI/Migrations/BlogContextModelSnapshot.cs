@@ -34,7 +34,7 @@ namespace BlogAPI.Migrations
 
                     b.HasIndex("PostsPostId");
 
-                    b.ToTable("AuthorPost");
+                    b.ToTable("AuthorPost", (string)null);
                 });
 
             modelBuilder.Entity("BlogAPI.Models.Author", b =>
